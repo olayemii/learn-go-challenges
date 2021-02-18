@@ -1,0 +1,12 @@
+{
+    "author-header": {
+        "author": "Olayemi Garuba",
+        "contents": [
+            "this is on line 1.",
+        ],
+        "auto-comment-type": "/*",
+        "auto-space": true,
+        "auto-title": true,
+        "auto-date-type": 1
+    }
+}
