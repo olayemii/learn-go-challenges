@@ -14,10 +14,14 @@ Otherwise return the string false.
 
 func ABCheck(str string) bool {
 	for i, letter := range str {
-		if strings.ToLower(string(letter)) == "a" && len(str) > (i+4) && strings.ToLower(string(str[i+4])) == "b" {
+		if strings.ToLower(string(letter)) == "a" &&
+			len(str) > (i+4) &&
+			strings.ToLower(string(str[i+4])) == "b" {
 			return true
 		}
-		if strings.ToLower(string(letter)) == "b" && len(str) > (i+4) && strings.ToLower(string(str[i+4])) == "a" {
+		if strings.ToLower(string(letter)) == "b" &&
+			len(str) > (i+4) &&
+			strings.ToLower(string(str[i+4])) == "a" {
 			return true
 		}
 	}
