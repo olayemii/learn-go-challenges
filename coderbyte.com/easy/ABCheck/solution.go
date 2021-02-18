@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -23,8 +22,4 @@ func ABCheck(str string) bool {
 		}
 	}
 	return false
-}
-
-func main() {
-	fmt.Print(ABCheck("lane borrowed"))
 }
