@@ -18,7 +18,7 @@ func ABCheck(str string) bool {
 		if strings.ToLower(string(letter)) == "a" && len(str) > (i+4) && strings.ToLower(string(str[i+4])) == "b" {
 			return true
 		}
-		if strings.ToLower(string(letter)) == "b" && len(str) > (i+4) && strings.ToLower(string(str[i+4])) == "b" {
+		if strings.ToLower(string(letter)) == "b" && len(str) > (i+4) && strings.ToLower(string(str[i+4])) == "a" {
 			return true
 		}
 	}
