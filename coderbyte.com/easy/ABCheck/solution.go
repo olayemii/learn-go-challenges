@@ -1,6 +1,9 @@
 package main
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
 /*
 Have the function ABCheck(str) take the str parameter being passed
@@ -12,10 +15,10 @@ Otherwise return the string false.
 
 func ABCheck(str string) bool {
 	for i, letter := range str {
-		if strings.ToLower(string(letter)) == "a" && strings.ToLower(string(str[i+4])) == "b" {
+		if strings.ToLower(string(letter)) == "a" && len(str) > (i+4) && strings.ToLower(string(str[i+4])) == "b" {
 			return true
 		}
-		if strings.ToLower(string(letter)) == "b" && strings.ToLower(string(str[i+4])) == "b" {
+		if strings.ToLower(string(letter)) == "b" && len(str) > (i+4) && strings.ToLower(string(str[i+4])) == "b" {
 			return true
 		}
 	}
@@ -23,5 +26,5 @@ func ABCheck(str string) bool {
 }
 
 func main() {
-	ABCheck("olayemii")
+	fmt.Print(ABCheck("lane borrowed"))
 }
