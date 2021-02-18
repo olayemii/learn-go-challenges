@@ -1,8 +1,6 @@
 package main
 
-import (
-	"strings"
-)
+import "strings"
 
 /*
 Have the function ABCheck(str) take the str parameter being passed
